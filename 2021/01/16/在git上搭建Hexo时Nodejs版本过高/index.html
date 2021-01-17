@@ -6,18 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2021 | NurofenSS&#39;s Blog</title>
+  <title>Nodejs本地版本过高， 运行 Hexo d 报错 | NurofenSS&#39;s Blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="NurofenSS&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2021/index.html">
+  <meta name="description" content="问题阐述小弟在github上成功部署了自己的Hexo博客后，又安装了新的themeYilia-plus. 迫不及待想把小弟的第一篇博文更新到博客上， 于是小弟使用了： 12sudo hexo g # hexo generate 生成之前博文所需要的相关页面sudo hexo d # hexo deploy  把生成的新文件部署到github上面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nodejs本地版本过高， 运行 Hexo d 报错">
+<meta property="og:url" content="http://yoursite.com/2021/01/16/%E5%9C%A8git%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E6%97%B6Nodejs%E7%89%88%E6%9C%AC%E8%BF%87%E9%AB%98/index.html">
 <meta property="og:site_name" content="NurofenSS&#39;s Blog">
+<meta property="og:description" content="问题阐述小弟在github上成功部署了自己的Hexo博客后，又安装了新的themeYilia-plus. 迫不及待想把小弟的第一篇博文更新到博客上， 于是小弟使用了： 12sudo hexo g # hexo generate 生成之前博文所需要的相关页面sudo hexo d # hexo deploy  把生成的新文件部署到github上面">
 <meta property="og:locale">
+<meta property="og:image" content="http://yoursite.com/2021/01/public/img/17-01-2021/warning-1.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/public/img/17-01-2021/error-1.png">
+<meta property="article:published_time" content="2021-01-16T17:37:35.000Z">
+<meta property="article:modified_time" content="2021-01-16T17:37:35.000Z">
 <meta property="article:author" content="NurofenSS">
-<meta property="article:tag" content="php mysql symfony laravel ruby linux">
+<meta property="article:tag" content="Nodejs">
+<meta property="article:tag" content="NVM">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2021/01/public/img/17-01-2021/warning-1.png">
   
     <link rel="alternative" href="/atom.xml" title="NurofenSS&#39;s Blog" type="application/atom+xml">
   
@@ -178,41 +186,114 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-在git上搭建Hexo时Nodejs版本过高" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/16/%E5%9C%A8git%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E6%97%B6Nodejs%E7%89%88%E6%9C%AC%E8%BF%87%E9%AB%98/" class="archive-article-date">
-        <time datetime="2021-01-16T17:37:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-16</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/16/%E5%9C%A8git%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E6%97%B6Nodejs%E7%89%88%E6%9C%AC%E8%BF%87%E9%AB%98/">Nodejs本地版本过高， 运行 Hexo d 报错</a>
-	
+    <h1 class="article-title" itemprop="name">
+      Nodejs本地版本过高， 运行 Hexo d 报错
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2021/01/16/%E5%9C%A8git%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E6%97%B6Nodejs%E7%89%88%E6%9C%AC%E8%BF%87%E9%AB%98/" class="archive-article-date">
+        <time datetime="2021-01-16T17:37:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-16</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">711字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <!-- 修改页面 more 的样式  -->
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="问题阐述"><a href="#问题阐述" class="headerlink" title="问题阐述"></a>问题阐述</h3><p>小弟在github上成功部署了自己的Hexo博客后，又安装了新的theme<a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus"><strong>Yilia-plus</strong></a>. 迫不及待想把小弟的第一篇博文更新到博客上， 于是小弟使用了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo hexo g # hexo generate 生成之前博文所需要的相关页面</span><br><span class="line">sudo hexo d # hexo deploy  把生成的新文件部署到github上面</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>结果出现如下错误：<br><img src="../../public/img/17-01-2021/warning-1.png" alt=" hex generate 生成页面时 出现warning"><br>之后又运行：<br><img src="../../public/img/17-01-2021/error-1.png" alt="hex deploy 部署到git时直接报错"><br>经过google查询了报错的原因后发现是由于Nodejs的版本太新的缘故， 当时我的Hexo的版本也很低（3.9.0左右），所以小弟的第一反映就是更新Hexo(v5.3.0)的版本，但并不能解决问题，错误依然存在.</p>
+<h3 id="解决问题思路"><a href="#解决问题思路" class="headerlink" title="解决问题思路"></a>解决问题思路</h3><p><strong>有人说安装一个低版本的Node不就好了？ 还需要发个博文记录？</strong><br>这个解决方法简单粗暴可以有效的解决问题，但是弊端就是以后的node项目也只能在低版本上跑，且新版本中的变动无法测试和使用，且对后期的项目维护很不友好。 </p>
+<p>解决的方法？ 目前有2个</p>
+<ol>
+<li>Travis CI </li>
+<li><a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm"><strong>NVM</strong></a> （<strong>本次的主角</strong>）</li>
+</ol>
+<p>首先 Travis CI : 是一个牛*的持续集成服务, 它绑定在Github上，可以自动抓取更新后的代码并提供运行，测试，还能部署到服务器端. 不用这么方便吧！ （这个小弟还在研究中，先挖个坑）。</p>
+<p>其次是本次的主角 NVM （node version manager）: 它通过你下载的不同版本的Nodejs，可以随意切换 完全符合我的要求。</p>
+<h3 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h3><p>首先小弟用的是Linux系统(<em>Linux 5.10.2-2-MANJARO linux x64</em>).<br>Blog是部署在github上的 ，本地nodejs版本为14.15.4<br>Hexo版本为5.3.0<br>如果各位大大是用windows系统的话 <a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows"><strong>NVM-windows</strong></a> 这个项目应该没问题， 小弟只有Linux系统所以就偷个懒啦.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">uname -a  #查看当前系统&#x2F;内核&#x2F;CPU</span><br><span class="line">node -v   #查看Nodejs的版本</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-安装："><a href="#1-安装：" class="headerlink" title="1. 安装："></a>1. 安装：</h4><p>小弟使用的是Manjaro发行版， 所以通过<a target="_blank" rel="noopener" href="https://github.com/Jguer/yay"><strong>YaY</strong></a>来安装NVM的.<br><em>linux小课堂</em><br>Yay: 在Linux系统下，专门安装用户自行开发的软件包的工具(民间软件)（Arch User Repository，AUR）. 大家可能听说过Yaourt， 它和Yay的功能一样也是非常好用的工具，但是在2018年后就停止更新了，所以为了安全起见大家可以试试Yay.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S nvm #在AUR中查找NVM</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-把NVM加入到Shell启动文件中"><a href="#2-把NVM加入到Shell启动文件中" class="headerlink" title="2. 把NVM加入到Shell启动文件中"></a>2. 把NVM加入到Shell启动文件中</h4><p>安装完成后，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source &#x2F;usr&#x2F;share&#x2F;nvm&#x2F;init-nvm.sh</span><br></pre></td></tr></table></figure>
+<p>重新启动shell</p>
+<h4 id="3-使用NVM安装你所需要的node版本："><a href="#3-使用NVM安装你所需要的node版本：" class="headerlink" title="3. 使用NVM安装你所需要的node版本："></a>3. 使用NVM安装你所需要的node版本：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#安装node 15.6.0</span><br><span class="line">nvm install 15.6.0</span><br><span class="line">#当前环境下使用 15.6.0版本</span><br><span class="line">nvm use 15.6.0</span><br><span class="line">#查看当前node的版本</span><br><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-最后测试hexo-g-和-hexo-d"><a href="#4-最后测试hexo-g-和-hexo-d" class="headerlink" title="4. 最后测试hexo g 和 hexo d:"></a>4. 最后测试hexo g 和 hexo d:</h4>
+    
+
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          NurofenSS
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yoursite.com/2021/01/16/在git上搭建Hexo时Nodejs版本过高/" title="Nodejs本地版本过高， 运行 Hexo d 报错" target="_blank">http://yoursite.com/2021/01/16/在git上搭建Hexo时Nodejs版本过高/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -228,62 +309,107 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/01/16/%E5%9C%A8git%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E6%97%B6Nodejs%E7%89%88%E6%9C%AC%E8%BF%87%E9%AB%98/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/14/My-first-Blog/" class="archive-article-date">
-        <time datetime="2021-01-14T17:11:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-14</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/14/My-first-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">菜鸟博客开张啦</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/14/My-first-Blog/">菜鸟博客开张啦</a>
-	
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">生活漫谈</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
+
+
+
 
 
           </div>
@@ -324,8 +450,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
