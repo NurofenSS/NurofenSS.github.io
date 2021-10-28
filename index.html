@@ -247,40 +247,9 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>最近新买了一台笔电（Asus TUF 506LH）终于让跟随了自己10几年的电脑退休了， 新电脑自带一块500G的SSD硬盘（windows10），于是又花钱买了一块海盗船的500G SSD （Manjaro）用来做双系统，查了一下网上大部分都是单硬盘双系统，双硬盘做系统还真的不多于是就想写这篇文章来记录一下如何操作</p>
-<h2 id="前期准备："><a href="#前期准备：" class="headerlink" title="前期准备："></a>前期准备：</h2><ol>
-<li>一个8G以上的USB做windows10的启动盘 （需要激活系统）</li>
-<li>一个8G以上的USB做Manjaro的启动盘</li>
-<li>如何启动到BIOS ，ASUS开机启动按<strong>F2</strong></li>
-<li><a target="_blank" rel="noopener" href="https://www.microsoft.com/fr-fr/software-download/windows10%20">Windows 10官方下载地址</a> <strong>工具自带制作启动程序</strong></li>
-<li><a target="_blank" rel="noopener" href="https://manjaro.org/download/">Manjaro 下载地址</a><ol>
-<li>需要使用<a target="_blank" rel="noopener" href="https://rufus.ie/zh/">Rufus</a>来制作启动盘</li>
-</ol>
-</li>
-<li>建议先安装Windows 然后是Linux</li>
-</ol>
-<h3 id="安装Windows"><a href="#安装Windows" class="headerlink" title="安装Windows"></a>安装Windows</h3><p>我的电脑买回来以后是裸机没有系统程序, 首先进入BIOS <strong>关闭安全启动（Secure Boot）</strong> 不然会导致U盘无法启动, 然后把USB插入并进入BIOS程序， 调整以USB启动为优先顺序.<br>根据windows提供的步骤一步一步安装即可.</p>
-<ol>
-<li>分区这里我以500G的SSD为例： C盘系统盘： 200G， D盘工具游戏: 300G</li>
-<li>系统安装完毕以后 需要设置电源电量 不然机器无法关机（我的是关机和重启一样）<ol>
-<li>进入电源选项（控制面板)</li>
-<li>点击电脑按钮功能</li>
-<li>点击<strong>更改当前不可用的设置</strong></li>
-<li>取消勾选 <strong>启用快速启动</strong></li>
-</ol>
-</li>
-</ol>
-<h3 id="安装Manjaro"><a href="#安装Manjaro" class="headerlink" title="安装Manjaro"></a>安装Manjaro</h3><p>同样插入U盘然后开机 进入Manjaro配置界面, 设置系统语言，键盘, 然后进入安装模式， 这里基础的设置都略过， 主要讲一下Linux下硬盘的划分和2个系统引导如何建立<br><strong>双硬盘需要在每个硬盘上创建引导分区，1个为windows, 1个为linux</strong></p>
-<ol>
-<li>创建引导分区: <strong>/boot/efi</strong>  类型要选择:FAT32, 300MB, 标记： <strong>boot</strong> 和 <strong>bios-grub</strong> </li>
-<li>/opt : 200G 这里主要是存放软件用的</li>
-<li>/home ： 150G 这里是用户信息</li>
-<li>/：  100G 根目录</li>
-<li>swap： 10G 如果内存不够可以更大.</li>
-<li>剩下的硬盘到时候哪个文件不够再加</li>
-<li><strong>更换到windows的硬盘， 这里有一个大小为100MB类型为FAT32的windows引导区， 此区间悬挂到： /boot/efi 然后给这个引导区添加标记 boot 和 bios-grub</strong></li>
-</ol>
-<p>至此2个系统的引导分区都已经设置完毕了， 等待Manjaro安装完毕后重启电脑系统就可以自动进入EFI界面，实现2个系统的任意切换</p>
-
+    
+    <a class="article-more-a" href="/2021/10/26/hello-world/#more">more >></a>
+    
     
 
     
